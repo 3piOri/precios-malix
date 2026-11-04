@@ -1,0 +1,32 @@
+[
+        {
+            
+            "nombre": "Paseo (1h)",
+            "precio": 150.00 
+        },
+        {
+            
+            "nombre": "Obediencia básica",
+            "precio": 6000
+        },
+        {
+            
+            "nombre": "Clases particulares (1h)",
+            "precio": 250
+        },
+        {
+            
+            "nombre": "Asesoría (2h)",
+            "precio": 1000
+        },
+        {
+            
+            "nombre": "Estancia Diurna(hasta 8 horas)",
+            "precio": 150
+        },
+        {
+            
+            "nombre": "Estancia nocturna(24 horas)",
+            "precio": 300
+        }
+]

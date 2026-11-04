@@ -1,0 +1,218 @@
+@font-face {
+    font-family: "Aero Matics Italic";
+    src: url("Aero Matics Italic.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Aero Matics Italic', sans-serif;
+    font-size: 24px;
+}
+
+body {
+    overflow-x: hidden;
+    min-height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    text-transform: capitalize;
+    margin-inline: 1rem;
+    transition: all 0.25s ease-in-out;
+    cursor: default;
+}
+
+li:hover {
+    background: linear-gradient(50deg, #965d28, #025707);
+    backdrop-filter: brightness(2.5);
+    box-shadow: 0px 0px 10px #000000;
+}
+.logo-background {
+    position: fixed;
+    z-index: -9;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    max-width: none;
+    background-color: black;
+    pointer-events: none;
+}
+
+h1 {
+    width: fit-content;
+    margin-inline: auto;
+    font-size: 3rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    
+    /* Degradado interno */
+    background-image: linear-gradient(50deg, #965d28, #025707);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    
+    /* Borde blanco y orden de renderizado */
+    -webkit-text-stroke: 0.01px rgba(255, 255, 255, 0.404);
+    paint-order: stroke fill;
+    
+    /* Sombra para que resalte del fondo */
+    text-shadow: 0px 0px 12px rgba(0, 0, 0, 0.9);
+}
+
+/* Capa inferior: genera el borde/trazo blanco exacto */
+h1::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    
+    /* Grosor y color del borde blanco */
+    -webkit-text-stroke: 3px white;
+    color: transparent;
+}
+
+
+.whatsapp-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background-color: #25d366;
+    border-radius: 50%;
+    text-decoration: none;
+    align-self: center;
+    margin: 1rem 0;
+    transition: transform 0.3s ease;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+    70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+}
+
+.whatsapp-btn i {
+    font-size: 40px;
+    color: #ffffff;
+    background: none;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+}
+
+.whatsapp-btn:hover {
+    transform: scale(1.1);
+}
+
+.whatsapp-btn i:hover {
+    background: none;
+    box-shadow: none;
+    backdrop-filter: none;
+}
+
+
+button:hover {
+    background: linear-gradient(50deg, #965d28, #dce09d);;
+    backdrop-filter: brightness(2.5);
+    box-shadow: 0px 0px 10px #000000;
+}
+
+i {
+    background: linear-gradient(50deg, #965d28a2, #7ef06fa2);
+    margin: 5px;
+    border-radius: 10px;
+    padding: 5px;
+    transition: all 0.25s ease-in-out;
+}
+
+i:hover {
+    background: linear-gradient(50deg, #965d2896, #bfc92fad);
+    backdrop-filter: brightness(3.5);
+    box-shadow: 0px 0px 10px #000000;
+}
+
+.precios {
+    padding: 1rem;
+    background: linear-gradient(50deg, #965d28a2, #7ef06fa2);
+    margin: 5px;
+    border-radius: 15px;
+}
+
+.precio {
+    color: #000000;
+    margin-left: 3rem;
+}
+
+.shadow {
+    width: 100%;
+    height: 250px;
+    position: absolute;
+    top: 0;
+    background: linear-gradient(180deg, black, transparent);
+    z-index: -1;
+}
+
+footer {
+    color: #fcf8f8;
+}
+.site-footer {
+  width: 100%;
+  padding: 1.5rem 0 rem;
+  text-align: center;
+  font-size: 0.5rem;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.6); /* Fondo oscuro semitransparente */
+  backdrop-filter: blur(2px); /* Efecto de desenfoque elegante si hay imágenes detrás */
+  margin-top: 2%;
+}
+
+.site-footer p {
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+
+/* Estilos para íconos de redes sociales en el footer */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.social-links a {
+    color: #ffffff;
+    font-size: 0.7rem;
+    width: 40px;
+    height: 40px;
+    border-radius: 40%;
+    background-color: rgba(243, 234, 234, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.social-links a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    transform: translateY(-3px);
+}

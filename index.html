@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba precios</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <model-viewer
+        class="logo-background"
+        src="3dsvg.glb"
+        alt=""
+        aria-hidden="true"
+        auto-rotate
+        auto-rotate-delay="0"
+        rotation-per-second="20deg"
+        interaction-prompt="none"
+        disable-zoom>
+    </model-viewer>
+    <div class="shadow"></div>
+    <h1>El perro Malix</h1>
+    <i>Cotiza tus servicios</i>
+    <section class="precios">
+        <h2>Lista de Precios</h2>
+        <p>(Sujetos a cambios)</p>
+        <ul id="preciosUl"></ul>
+    </section>
+    <a href="https://wa.me/529993665693?text=Hola,%20me%20gustar%C3%ADa%20solicitar%20informaci%C3%B3n%20sobre%20sus%20servicios."
+	class="whatsapp-btn"
+	target="_blank"
+	rel="noopener noreferrer"
+	aria-label="Contacto por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+    <script src="script.js"></script>
+    <footer class="site-footer">
+  <p>&copy; <span id="year"></span> EL PERRO MALIX. Todos los derechos reservados. Mérida, Yucatán, México.</p>
+    	<div class="social-links">
+            <a href="https://facebook.com/elperromalix" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               aria-label="Facebook de El Perro Malix">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://instagram.com/elperromalix" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               aria-label="Instagram de El Perro Malix">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://maps.app.goo.gl/XzPG1cyACXnTHkEh8"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="Buscar El Perro Malix en Google Maps">
+                <i class="fas fa-map-location-dot"></i>
+            </a>
+    </footer>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
