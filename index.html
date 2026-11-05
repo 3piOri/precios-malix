@@ -6,7 +6,8 @@
     <title>Prueba precios</title>
     <link rel="preconnect" href="https://ajax.googleapis.com">
     <link rel="modulepreload" href="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js" crossorigin>
-    <link rel="preload" href="3dsvg-v1.glb" as="fetch" crossorigin fetchpriority="high">
+    <link rel="preload" href="3dsvg-mobile.glb" as="fetch" crossorigin fetchpriority="high" media="(max-width: 600px)">
+    <link rel="preload" href="3dsvg-v1.glb" as="fetch" crossorigin fetchpriority="high" media="(min-width: 601px)">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
@@ -30,7 +31,8 @@
 <body>
     <model-viewer
         class="logo-background"
-        src="3dsvg-v1.glb"
+        data-src-mobile="3dsvg-mobile.glb"
+        data-src-desktop="3dsvg-v1.glb"
         alt=""
         aria-hidden="true"
         auto-rotate
@@ -41,6 +43,11 @@
         loading="eager"
         reveal="auto">
     </model-viewer>
+    <script>
+        const logoModel = document.querySelector('.logo-background');
+        const isMobile = window.matchMedia('(max-width: 600px)').matches;
+        logoModel.setAttribute('src', isMobile ? logoModel.dataset.srcMobile : logoModel.dataset.srcDesktop);
+    </script>
     <div class="shadow"></div>
     <h1>El perro Malix</h1>
     <i>Cotiza tus servicios</i>
