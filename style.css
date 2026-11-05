@@ -37,7 +37,7 @@ li {
 }
 
 li:hover {
-    background: linear-gradient(50deg, #965d28, #025707);
+    background: linear-gradient(50deg, #c0c92f, #6d7732);
     backdrop-filter: brightness(2.5);
     box-shadow: 0px 0px 10px #000000;
 }
@@ -49,7 +49,7 @@ li:hover {
     width: 100vw;
     height: 100vh;
     max-width: none;
-    background-color: black;
+    background-color: #965d28;
     pointer-events: none;
 }
 
@@ -61,7 +61,7 @@ h1 {
     text-transform: uppercase;
     
     /* Degradado interno */
-    background-image: linear-gradient(50deg, #965d28, #025707);
+    background-image: linear-gradient(50deg, #c0c92f, #7ef06fa2);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -131,13 +131,13 @@ h1::before {
 
 
 button:hover {
-    background: linear-gradient(50deg, #965d28, #dce09d);;
+    background: linear-gradient(50deg, #c0c92f, #dce09d);;
     backdrop-filter: brightness(2.5);
     box-shadow: 0px 0px 10px #000000;
 }
 
 i {
-    background: linear-gradient(50deg, #965d28a2, #7ef06fa2);
+    background: linear-gradient(50deg, #c0c92f, #6d7732);
     margin: 5px;
     border-radius: 10px;
     padding: 5px;
@@ -145,14 +145,14 @@ i {
 }
 
 i:hover {
-    background: linear-gradient(50deg, #965d2896, #bfc92fad);
+    background: linear-gradient(50deg, #c0c92f, #bfc92fad);
     backdrop-filter: brightness(3.5);
     box-shadow: 0px 0px 10px #000000;
 }
 
 .precios {
     padding: 1rem;
-    background: linear-gradient(50deg, #965d28a2, #7ef06fa2);
+    background: linear-gradient(50deg, #c0c92f, #7ef06fa2);
     margin: 5px;
     border-radius: 15px;
 }
@@ -176,13 +176,13 @@ footer {
 }
 .site-footer {
   width: 100%;
-  padding: 1.5rem 0 rem;
+  padding: 1.5rem 0;
   text-align: center;
-  font-size: 0.5rem;
+  font-size: 0.6rem;
   color: #ffffff;
-  background-color: rgba(0, 0, 0, 0.6); /* Fondo oscuro semitransparente */
+  background-color: rgba(150, 93, 40, 0.6); /* Fondo oscuro semitransparente */
   backdrop-filter: blur(2px); /* Efecto de desenfoque elegante si hay imágenes detrás */
-  margin-top: 2%;
+  margin-top: 0%;
 }
 
 .site-footer p {
