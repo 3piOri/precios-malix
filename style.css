@@ -216,3 +216,64 @@ footer {
     background-color: rgba(255, 255, 255, 0.3);
     transform: translateY(-3px);
 }
+
+@media (max-width: 600px) {
+    html {
+        font-size: clamp(16px, 4.5vw, 20px);
+    }
+
+    body {
+        min-height: 100vh;
+        min-height: 100dvh;
+        justify-content: flex-start;
+        gap: 0.75rem;
+        padding: 1rem 0.75rem 0;
+    }
+
+    .logo-background {
+        height: 100vh;
+        height: 100dvh;
+    }
+
+    h1 {
+        width: 100%;
+        padding-inline: 0.25rem;
+        font-size: clamp(2rem, 9vw, 2.7rem);
+        line-height: 1.05;
+    }
+
+    .precios {
+        width: 100%;
+        margin: 0;
+        padding: 1rem 0.75rem;
+    }
+
+    .precios h2 {
+        font-size: 1.5rem;
+    }
+
+    li {
+        gap: 0.75rem;
+        margin-inline: 0;
+        text-align: left;
+    }
+
+    li span {
+        flex-shrink: 0;
+        white-space: nowrap;
+    }
+
+    .whatsapp-btn {
+        margin: 0.25rem 0;
+    }
+
+    .site-footer {
+        padding: 1rem;
+        font-size: 0.65rem;
+    }
+
+    .social-links a {
+        width: 44px;
+        height: 44px;
+    }
+}
