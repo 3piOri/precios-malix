@@ -220,6 +220,7 @@ footer {
 @media (max-width: 600px) {
     html {
         font-size: clamp(16px, 4.5vw, 20px);
+        background-color: #965d28;
     }
 
     body {
@@ -233,6 +234,11 @@ footer {
     .logo-background {
         height: 100vh;
         height: 100dvh;
+    }
+
+    .shadow {
+        left: 0;
+        width: 100vw;
     }
 
     h1 {
