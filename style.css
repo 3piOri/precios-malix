@@ -141,7 +141,22 @@ i {
     margin: 5px;
     border-radius: 10px;
     padding: 5px;
+    display: block;
+    width: 100%;
     transition: all 0.25s ease-in-out;
+}
+@media (min-width: 768px) {
+    i {
+        max-width: 1000px;  /* Ancho máximo que tendrá en PC */
+        margin-left: auto;
+        margin-right: auto; /* Lo centra en la pantalla */
+    }
+
+    .precios {
+        max-width: 1000px;  /* Ancho máximo que tendrá en PC */
+        margin-left: auto;
+        margin-right: auto; /* Lo centra en la pantalla */
+    }
 }
 
 i:hover {
@@ -151,10 +166,13 @@ i:hover {
 }
 
 .precios {
-    padding: 1rem;
+    padding: 5px;
     background: linear-gradient(50deg, rgba(192, 201, 47, 0.3), rgba(126, 240, 111, 0.3));
-    margin: 5px;
+    margin: 5px auto;
     border-radius: 15px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
     line-height: 2.4;
 }
 
