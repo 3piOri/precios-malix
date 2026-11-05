@@ -194,6 +194,8 @@ footer {
     color: #fcf8f8;
 }
 .site-footer {
+  position: relative;
+  isolation: isolate;
   width: 100%;
   padding: 1.5rem 0;
   text-align: center;
@@ -202,6 +204,18 @@ footer {
   background-color: rgba(150, 93, 40, 0.6); /* Fondo oscuro semitransparente */
   backdrop-filter: blur(2px); /* Efecto de desenfoque elegante si hay imágenes detrás */
   margin-top: auto;
+}
+
+.site-footer::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 350px;
+  background: linear-gradient(0deg, black, transparent);
+  pointer-events: none;
 }
 
 .site-footer p {
