@@ -49,7 +49,7 @@ li:hover {
     width: 100vw;
     height: 100vh;
     max-width: none;
-    background-color: #0f0f0f;
+    background-color: #965d28;
     pointer-events: none;
 }
 
@@ -61,31 +61,26 @@ h1 {
     text-transform: uppercase;
     
     /* Degradado interno */
-    background-image: linear-gradient(50deg, #c0c92f, #7ef06fa2);
+    background-image: linear-gradient(50deg, #bfc92f, #7ef06fa2);
     -webkit-background-clip: text;
     background-clip: text;
-    color: transparent;
-    -webkit-text-fill-color: transparent;
+    color: solid;
+    -webkit-text-fill-color: solid;
     
     /* Borde blanco y orden de renderizado */
-    -webkit-text-stroke: 0.01px rgba(255, 255, 255, 0.404);
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.65);
     paint-order: stroke fill;
     
     /* Sombra para que resalte del fondo */
     text-shadow: 0px 0px 12px rgba(0, 0, 0, 0.9);
 }
 
-/* Capa inferior: genera el borde/trazo blanco exacto */
-h1::before {
-    content: attr(data-text);
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    
-    /* Grosor y color del borde blanco */
-    -webkit-text-stroke: 3px white;
-    color: transparent;
+h1 .destacado {
+    color: #965d2899;
+    -webkit-text-fill-color: #965d2899;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.65);
+    paint-order: stroke fill;
+    text-shadow: 0px 0px 12px rgba(0, 0, 0, 0.9);
 }
 
 
@@ -137,7 +132,7 @@ button:hover {
 }
 
 i {
-    background: linear-gradient(50deg, #c0c92f, #6d7732);
+    background: linear-gradient(50deg, #c0c92f, #7ef06fa2);
     margin: 5px;
     border-radius: 10px;
     padding: 5px;
@@ -167,7 +162,7 @@ i:hover {
 
 .precios {
     padding: 5px;
-    background: linear-gradient(50deg, rgba(192, 201, 47, 0.3), rgba(126, 240, 111, 0.3));
+    background: linear-gradient(50deg, rgb(192, 201, 47, 0.25), rgba(126, 240, 111, 0.55));
     margin: 5px auto;
     border-radius: 15px;
     display: block;
