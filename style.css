@@ -59,13 +59,7 @@ h1 {
     font-size: 3rem;
     font-weight: 900;
     text-transform: none;
-    
-    /* Degradado interno */
-    background-image: linear-gradient(50deg, #bfc92f, #7ef06fa2);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: solid;
-    -webkit-text-fill-color: solid;
+    color: #000000;
     
     /* Borde blanco y orden de renderizado */
     -webkit-text-stroke: 1px rgba(255, 255, 255, 0.65);
