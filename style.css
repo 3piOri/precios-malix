@@ -155,11 +155,11 @@ body > i:hover {
 }
 
 .precios li {
-    color: white;
+    color: black;
 }
 
 .precios li:hover {
-    color: black;
+    color: white;
 }
 
 .shadow {
