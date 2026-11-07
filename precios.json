@@ -1,12 +1,12 @@
 [
         {
             
-            "nombre": "Paseo (1h)",
+            "nombre": "Paseo Canino(1h)",
             "precio": 150.00 
         },
         {
             
-            "nombre": "Obediencia básica",
+            "nombre": "Entrenamiento de obediencia básica",
             "precio": 6000
         },
         {
@@ -16,7 +16,7 @@
         },
         {
             
-            "nombre": "Asesoría (2h)",
+            "nombre": "Asesoría de comportamiento (2h)",
             "precio": 1000
         },
         {
