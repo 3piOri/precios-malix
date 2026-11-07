@@ -31,7 +31,7 @@ li {
     display: flex;
     justify-content: space-between;
     list-style: none;
-    text-transform: capitalize;
+    text-transform: none;
     margin-inline: 1rem;
     transition: all 0.25s ease-in-out;
     cursor: default;
@@ -151,11 +151,28 @@ body > i:hover {
     border-radius: 15px;
     display: block;
     width: 85%;
-    line-height: 2.4;
+    line-height: 2.6;
+}
+
+.precios h2,
+.precios p {
+    line-height: 1.2;
+}
+
+.precios h2 {
+    margin-bottom: 0;
+}
+
+.precios p {
+    margin-top: 0;
 }
 
 .precios li {
     color: black;
+}
+
+.precios ul {
+    margin-top: 2rem;
 }
 
 .precios li:hover {

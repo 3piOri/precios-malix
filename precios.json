@@ -1,8 +1,18 @@
 [
         {
             
-            "nombre": "Paseo Canino(1h)",
+            "nombre": "Paseo canino (1 h.)",
             "precio": 150.00 
+        },
+        {
+            
+            "nombre": "Clases particulares (1 h.)",
+            "precio": 250
+        },
+        {
+            
+            "nombre": "Asesoría de comportamiento (2 h.)",
+            "precio": 1000
         },
         {
             
@@ -11,22 +21,12 @@
         },
         {
             
-            "nombre": "Clases particulares (1h)",
-            "precio": 250
-        },
-        {
-            
-            "nombre": "Asesoría de comportamiento (2h)",
-            "precio": 1000
-        },
-        {
-            
-            "nombre": "Estancia Diurna(hasta 8 horas)",
+            "nombre": "Estancia diurna (hasta 8 h.)",
             "precio": 150
         },
         {
             
-            "nombre": "Estancia nocturna(24 horas)",
+            "nombre": "Estancia nocturna (24 h.)",
             "precio": 300
         }
 ]
