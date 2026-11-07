@@ -58,7 +58,7 @@ h1 {
     margin-inline: auto;
     font-size: 3rem;
     font-weight: 900;
-    text-transform: uppercase;
+    text-transform: none;
     
     /* Degradado interno */
     background-image: linear-gradient(50deg, #bfc92f, #7ef06fa2);
