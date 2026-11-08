@@ -181,7 +181,7 @@ body > i:hover {
 
 .shadow {
     width: 100%;
-    height:100px;
+    height:70px;
     position: absolute;
     top: 0;
     background: linear-gradient(180deg, black, transparent);
@@ -199,22 +199,13 @@ footer {
   text-align: center;
   font-size: 0.6rem;
   color: #ffffff;
-  background-color: rgba(150, 93, 40, 0.6); /* Fondo oscuro semitransparente */
-  backdrop-filter: blur(2px); /* Efecto de desenfoque elegante si hay imágenes detrás */
+  /* Un degradado que va de negro sólido en la base a transparente hacia arriba */
+  background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+  backdrop-filter: none;
   margin-top: auto;
 }
 
-.site-footer::before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  height: 350px;
-  background: linear-gradient(0deg, black, transparent);
-  pointer-events: none;
-}
+/* Ya puedes borrar por completo el bloque .site-footer::before anterior */
 
 .site-footer p {
   margin: 0;
