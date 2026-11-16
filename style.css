@@ -250,7 +250,7 @@ footer {
         width: 100%;
         min-height: 100%;
         font-size: clamp(16px, 4.5vw, 20px);
-        background-color: #965d28;
+        background-color: #0a0a0a;
     }
 
     body {
