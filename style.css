@@ -51,6 +51,7 @@ li:hover {
     left: 0;
     width: 100vw;
     height: 100vh;
+    height: 100lvh;
     max-width: none;
     background-color: rgba(0, 0, 0, 0.925);
     pointer-events: none;
@@ -268,7 +269,7 @@ footer {
         width: 100vw;
         max-width: none;
         height: 100vh;
-        height: 100dvh;
+        height: 100lvh;
     }
 
     .shadow {
